@@ -1,4 +1,10 @@
 
+// PRELOADER
+let preloader = document.getElementById("preloader-container")
+
+function prefunction(){
+    preloader.style.display = "none"
+}
 
 function openmore(){
     // document.getElementById("more-menu").style.display = 'block'
@@ -40,6 +46,8 @@ window.addEventListener('scroll', function(){
         if(window.pageYOffset >= 1){
             scrollhidden.style.left = '-528px'
             document.getElementById('mobile-menu').style.display = 'inline-block'
+        }else if(window.innerWidth > 500){
+            scrollhidden.style.left = '0px'
         }
     }
         
