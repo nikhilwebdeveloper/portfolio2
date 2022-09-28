@@ -1,9 +1,11 @@
 
 // PRELOADER
 let preloader = document.getElementById("preloader-container")
+let body = document.getElementById("body")
 
 function prefunction(){
     preloader.style.display = "none"
+    body.style.overflowY = "auto"
 }
 
 function openmore(){
