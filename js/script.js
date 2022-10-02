@@ -51,7 +51,27 @@ window.addEventListener('scroll', function(){
         }else if(window.innerWidth > 500){
             scrollhidden.style.left = '0px'
         }
-    }
-        
+    }   
 
 });
+
+    let home = document.getElementById('home-li')
+    let abt = document.getElementById('abt-li')
+    let contect = document.getElementById('contect-li')
+window.addEventListener('scroll', function(){
+    if(window.pageYOffset >= 548){
+        document.getElementById('abt-li').style.color = '#efd91f'
+        document.getElementById('home-li').style.color = '#fff'
+    }else{
+        document.getElementById('abt-li').style.color = '#fff'
+        document.getElementById('home-li').style.color = '#efd91f'
+    }
+
+    if(window.pageYOffset >= 2100.88){
+        document.getElementById('contect-li').style.color = '#efd91f'
+        document.getElementById('abt-li').style.color = '#fff'
+    }else{
+        document.getElementById('contect-li').style.color = '#fff'
+        document.getElementById('abt-li').style.color = '#efd91f'
+    }
+})
