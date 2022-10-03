@@ -72,6 +72,6 @@ window.addEventListener('scroll', function(){
         document.getElementById('abt-li').style.color = '#fff'
     }else{
         document.getElementById('contect-li').style.color = '#fff'
-        document.getElementById('abt-li').style.color = '#efd91f'
+        // document.getElementById('abt-li').style.color = '#efd91f'
     }
 })
